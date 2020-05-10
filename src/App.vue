@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <Header hoge="hogehogehoge" />
-    <Maincontent huga="hugahugahuga" />
+    <router-view/>
+    <router-link to="/">Go to home</router-link><br>
+    <router-link to="/about">Go to about</router-link>
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Maincontent from './components/Maincontent.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
-    Maincontent,
     Footer
   }
 }

@@ -24,7 +24,7 @@ export default {
   padding: 50px 40px;
   height: 300px;
   display: flex;
-  background-color: #BAE6F3;
+  background-color: #80CBC4;
 }
 .news-container {
   width: 810px;
