@@ -1,19 +1,12 @@
 <template>
   <section class="main">
-    <div class="page-title">HOME</div>
+    <div class="page-title">PayPay</div>
   </section>
 </template>
 
 <script>
-// import Calendar from './Calendar.vue'
 export default {
-  name: 'Maincontent',
-  // components: {
-  //   Calendar
-  // },
-  props: {
-    huga: String,
-  }
+  name: 'Paypay',
 }
 </script>
 
@@ -22,7 +15,7 @@ export default {
   margin: 0;
   height: calc(100vh - 90px);
   position: relative;
-  background-color: #BAE6F3;
+  background-color: #F24F50;
 
   .page-title {
     position: absolute;
@@ -33,11 +26,5 @@ export default {
     font-weight: bold;
     color: #fff;
   }
-  // .news-container {
-  //   width: 810px;
-  //   border-radius: 48px;
-  //   box-shadow: 0px 30px 40px 3px rgba(0,0,0,0.1);
-  //   background-color: #fff;
-  // }
 }
 </style>

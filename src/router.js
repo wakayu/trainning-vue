@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Maincontent from './components/Maincontent.vue'
-import Maincontent2 from './components/Maincontent2.vue'
+import Paypay from './components/Paypay.vue'
+import Linepay from './components/Linepay.vue'
 
 Vue.use(Router)
 
@@ -14,9 +15,14 @@ export default new Router({
         component: Maincontent
     },
     {
-        path: '/about',
-        name: 'about',
-        component: Maincontent2
+        path: '/paypay',
+        name: 'paypay',
+        component: Paypay
+    },
+    {
+      path: '/line',
+      name: 'line',
+      component: Linepay
     }
   ]
 })

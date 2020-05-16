@@ -2,8 +2,6 @@
   <div id="app">
     <Header hoge="hogehogehoge" />
     <router-view/>
-    <router-link to="/">Go to home</router-link><br>
-    <router-link to="/about">Go to about</router-link>
     <Footer />
   </div>
 </template>
@@ -21,7 +19,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 body {
   margin: 0;
 }
