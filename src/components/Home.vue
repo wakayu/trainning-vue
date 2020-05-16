@@ -7,12 +7,15 @@
 <script>
 // import Calendar from './Calendar.vue'
 export default {
-  name: 'Maincontent',
+  name: 'Home',
   // components: {
   //   Calendar
   // },
   props: {
     huga: String,
+  },
+  methods: {
+
   }
 }
 </script>

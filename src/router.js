@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Maincontent from './components/Maincontent.vue'
+import Home from './components/Home.vue'
 import Paypay from './components/Paypay.vue'
 import Linepay from './components/Linepay.vue'
+import Origamipay from './components/Origamipay.vue'
 
 Vue.use(Router)
 
@@ -12,7 +13,7 @@ export default new Router({
     {
         path: '/',
         name: 'home',
-        component: Maincontent
+        component: Home
     },
     {
         path: '/paypay',
@@ -23,6 +24,11 @@ export default new Router({
       path: '/line',
       name: 'line',
       component: Linepay
+    },
+    {
+      path: '/origami',
+      name: 'origami',
+      component: Origamipay
     }
   ]
 })

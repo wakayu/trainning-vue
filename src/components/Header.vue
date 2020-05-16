@@ -1,6 +1,11 @@
 <template>
   <header>
-    <h1>キャッシュレス還元情報</h1>
+    <h1 v-on:click="getData">キャッシュレス還元情報</h1>
+    <ul>
+      <li v-for="user in userDatas" :key="user.name">
+        {{ user.name }}
+      </li>
+    </ul>
     <ul class="header">
       <li>
         <router-link to="/" class="link">HOME</router-link>
@@ -12,29 +17,49 @@
         <router-link to="/line" class="link line">LINE Pay</router-link>
       </li>
       <li>
-        <router-link to="/" class="link origami">Origami Pay</router-link>
+        <router-link to="/origami" class="link origami">Origami Pay</router-link>
       </li>
       <li>
-        <router-link to="/" class="link merpay">メルペイ</router-link>
+        <router-link to="/merpay" class="link merpay">メルペイ</router-link>
       </li>
       <li>
-        <router-link to="/" class="link docomo">d払い</router-link>
+        <router-link to="/docomo" class="link docomo">d払い</router-link>
       </li>
       <li>
-        <router-link to="/" class="link au">auPAY</router-link>
+        <router-link to="/au" class="link au">auPAY</router-link>
       </li>
       <li>
-        <router-link to="/" class="link kyash">Kyash</router-link>
+        <router-link to="/kyash" class="link kyash">Kyash</router-link>
       </li>
     </ul>
   </header>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   name: 'Header',
   props: {
     hoge: String,
+  },
+  data: function() {
+    return {
+      userDatas: [],
+    };
+  },
+  methods: {
+    // getData() {
+    //   const testApi = "https://jsonplaceholder.typicode.com/users";
+    //   const users = fetch(testApi).json();
+    //   this.userDatas = users;
+    // }
+    getData(){
+      axios
+      .get("https://jsonplaceholder.typicode.com/users")
+      .then(response => {
+        this.userDatas = response.data
+      })
+    }
   }
 }
 </script>
@@ -85,7 +110,7 @@ header {
       }
 
       .merpay {
-        color: #FF5B1A;
+        color: #FF0111;
       }
 
       .docomo {
