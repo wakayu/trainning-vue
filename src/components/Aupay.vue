@@ -1,12 +1,12 @@
 <template>
   <section class="main">
-    <div class="page-title">メルペイ</div>
+    <div class="page-title">auPAY</div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Merpay',
+  name: 'au',
 }
 </script>
 
@@ -15,7 +15,7 @@ export default {
   margin: 0;
   height: calc(100vh - 90px);
   position: relative;
-  background-color: #FF0111;
+  background-color: #EB5505;
 
   .page-title {
     position: absolute;

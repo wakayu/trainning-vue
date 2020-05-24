@@ -17,7 +17,7 @@
         <router-link to="/line" class="link line">LINE Pay</router-link>
       </li>
       <li>
-        <router-link to="/origami" class="link origami">Origami Pay</router-link>
+        <router-link to="/merpay" class="link origami">Origami Pay</router-link>
       </li>
       <li>
         <router-link to="/merpay" class="link merpay">メルペイ</router-link>

@@ -1,12 +1,12 @@
 <template>
   <section class="main">
-    <div class="page-title">Origami Pay</div>
+    <div class="page-title">Kyash</div>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Origamipay',
+  name: 'Aupay',
 }
 </script>
 
@@ -15,7 +15,7 @@ export default {
   margin: 0;
   height: calc(100vh - 90px);
   position: relative;
-  background-color: #FF5B1A;
+  background-color: #2BD1FF;
 
   .page-title {
     position: absolute;
